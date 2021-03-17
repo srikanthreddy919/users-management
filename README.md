@@ -24,9 +24,13 @@ rake db:create db:migrate db:seed
 ```
 
 - export env variables
+- To generate secret key
+```ruby
+bundle exec rake secret
+```
 
 ```env
-export DEVISE_SECRET_KEY=generate_secret_key
+export DEVISE_SECRET_KEY=generated_secret_key
 ```
 
 - For `sign in` request
