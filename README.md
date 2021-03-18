@@ -67,11 +67,16 @@ DELETE http://localhost:3000/admins/sign_out
 GET http://localhost:3000/api/v1/users
 ```
 
+- For get a specific user
+
+````http
+GET http://localhost:3000/api/v1/users/:id
+
 - To Create user
 
 ```http
 POST http://localhost:3000/api/v1/users
-```
+````
 
 - Sample user Object for creation
 
