@@ -69,7 +69,7 @@ GET http://localhost:3000/api/v1/users
 
 - For get a specific user
 
-````http
+```http
 GET http://localhost:3000/api/v1/users/:id
 ```
 
@@ -77,7 +77,7 @@ GET http://localhost:3000/api/v1/users/:id
 
 ```http
 POST http://localhost:3000/api/v1/users
-````
+```
 
 - Sample user Object for creation
 
