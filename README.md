@@ -25,6 +25,7 @@ rake db:create db:migrate db:seed
 
 - export env variables
 - To generate secret key
+
 ```ruby
 bundle exec rake secret
 ```
@@ -36,7 +37,7 @@ export DEVISE_SECRET_KEY=generated_secret_key
 - For `sign in` request
 
 ```http
-http://localhost:3000/admins/sign_in
+POST http://localhost:3000/admins/sign_in
 ```
 
 > required params `username` and `password`
@@ -48,6 +49,12 @@ http://localhost:3000/admins/sign_in
     "password": "password"
   }
 }
+```
+
+- For `sign out` admin
+
+```http
+DELETE http://localhost:3000/admins/sign_out
 ```
 
 - after successfull signin request, copy the token from Authorization header and send along with all the requests
